@@ -1,0 +1,81 @@
+
+Esse pseudocódigo possui as classes Circulo, Triangulo, Retangulo
+
+possui as seguintes opções:
+
+-Calcular a área de um Círculo.
+-Calcular a área de um Triângulo.
+-Calcular a área de um Retângulo.
+ 
+... 
+
+Classe Circulo:
+
+    Atributo raio
+
+    Função CalcularArea():
+        Se raio <= 0:
+            Imprimir "Desculpe, o raio deve ser um valor positivo."
+        Senão:
+            área <- π * raio * raio
+            Imprimir "A área do círculo é:", área
+
+Classe Triangulo:
+
+    Atributos base e altura
+
+    Função CalcularArea():
+        Se base <= 0 ou altura <= 0:
+            Imprimir "Desculpe, a base e a altura devem ser valores positivos."
+        Senão:
+            área <- (base * altura) / 2
+            Imprimir "A área do triângulo é:", área
+
+Classe Retangulo:
+
+    Atributos largura e altura
+
+    Função CalcularArea():
+        Se largura <= 0 ou altura <= 0:
+            Imprimir "Desculpe, a largura e a altura devem ser valores positivos."
+        Senão:
+            área <- largura * altura
+            Imprimir "A área do retângulo é:", área
+
+Função Principal:
+
+    Imprimir "Por favor, escolha a forma geométrica para calcular a área:"
+    Imprimir "1. Círculo"
+    Imprimir "2. Triângulo"
+    Imprimir "3. Retângulo"
+
+    Escolha a opção:
+    Ler opção
+
+    Se opção == 1:
+        Imprimir "Digite o raio do círculo:"
+        Ler raio
+        circulo <- Circulo()
+        circulo.raio <- raio
+        circulo.CalcularArea()
+    Senão, se opção == 2:
+        Imprimir "Digite a base do triângulo:"
+        Ler base
+        Imprimir "Digite a altura do triângulo:"
+        Ler altura
+        triangulo <- Triangulo()
+        triangulo.base <- base
+        triangulo.altura <- altura
+        triangulo.CalcularArea()
+    Senão, se opção == 3:
+        Imprimir "Digite a largura do retângulo:"
+        Ler largura
+        Imprimir "Digite a altura do retângulo:"
+        Ler altura
+        retangulo <- Retangulo()
+        retangulo.largura <- largura
+        retangulo.altura <- altura
+        retangulo.CalcularArea()
+    Senão:
+        Imprimir "Opção inválida. Por favor, escolha uma opção válida.
+
