@@ -1,9 +1,4 @@
 import math
-import sys
-
-sys.stdout.reconfigure(encoding='utf-8')
-
-import math
 
 class Circulo:
     def __init__(self):
@@ -72,4 +67,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-''
